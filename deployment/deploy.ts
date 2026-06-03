@@ -1,5 +1,11 @@
 import { ethers } from "hardhat";
 
+
+async function standard_functions(name, address) {
+  const token = await ethers.getContractAt(name, address)
+  console.log(await token.totalSupply())
+}
+
 async function main() {
   // Get accounts in env, being the one from the private key in .env here.
   // The extracted signer is the one going to sign and send the transactions, deploy the contract.
@@ -16,6 +22,7 @@ async function main() {
   await token.waitForDeployment();
 
   const address = await token.getAddress();
+  await standard_functions('Helo42', address)
 
   console.log("\n✓ helo42 (h42) deployed!");
   console.log("  Contract address:", address);
