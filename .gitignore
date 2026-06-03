@@ -1,0 +1,10 @@
+.env
+.idea
+
+# Hardhat auto-generated
+artifacts/
+cache/
+typechain-types/
+
+# Node
+node_modules/
