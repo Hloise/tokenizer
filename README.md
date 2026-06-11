@@ -2,6 +2,8 @@
 
 A BEP-20 / ERC-20 fungible token deployed on **Ethereum Sepolia Testnet**, built as part of the 42 school Tokenizer project.
 
+The project is written in Typescript and the contract is written in Solidity because it is the native langage of Ethereum contracts.
+
 ---
 
 ## Blockchain platform: Ethereum (Sepolia Testnet)
